@@ -1,2 +1,3 @@
 # AutoTVStop
-After opening soucetv in CS2, changing the map during recording will cause the server to crash, so recording needs to be stopped
+After opening SourceTV in CS2, changing the map during recording will cause the server to crash, so recording needs to be stopped
+Recently, my players asked me to add a DEMO recording feature on the server. I enabled it, but then encountered server crashes when changing maps, which troubled me for two days. With guidance from the author who fixed the DEMO audio recording, I found out that the server crashes when the previous DEMO doesn't stop recording before changing maps. His solution was to execute the TV_Stop command when using the map command, leading to the creation of this simple plugin
